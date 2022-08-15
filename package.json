@@ -10,8 +10,9 @@
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1"
   },
+  "proxy": "http://172.31.4.148:8080",
   "scripts": {
-    "e2e": "cypress run",
+    "e2e": "cypress run --port 8000",
     "cypress-open": "cypress open",
     "start": "react-scripts start",
     "build": "react-scripts build",

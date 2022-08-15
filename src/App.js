@@ -16,18 +16,17 @@ function App() {
 
   return (
     <div className="App">
-      <body>
-
-        {data ? 
-        <div className='App-header'>
-          <button onClick={() => fetchData()}>
-            Hit endpoint
-          </button>
-          <p data-testid='id'>Id: {data.id}</p>
-          <p data-testid='title'>Title: {data.title}</p>
-          <p data-testid='userId'>UserId: {data.userId}</p>
-        </div>: null}
-      </body>
+      <div>
+        {data ?
+          <div className='App-header'>
+            <button onClick={() => fetchData()}>
+              Hit endpoint
+            </button>
+            <p data-testid='id'>Id: {data.id}</p>
+            <p data-testid='title'>Title: {data.title}</p>
+            <p data-testid='userId'>UserId: {data.userId}</p>
+          </div> : null}
+      </div>
     </div>
   );
 }
